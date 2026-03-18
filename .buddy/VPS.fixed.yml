@@ -2,6 +2,7 @@
   name: VPS
   refs:
   - refs/heads/main
+  priority: HIGH
   disabled: true
   target_site_url: https://vps.divyamhospital.online
   always_from_scratch: true
@@ -13,6 +14,7 @@
   - type: WEBHOOK
   permissions:
     others: READ_WRITE
+  docker_build_cache: WORKSPACE
   actions:
   - action: start
     type: NATIVE_BUILD_LINUX
