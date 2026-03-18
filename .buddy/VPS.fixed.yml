@@ -2,6 +2,13 @@
   name: VPS
   refs:
   - refs/heads/main
+  disabled: true
+  target_site_url: https://vps.divyamhospital.online
+  always_from_scratch: true
+  ignore_fail_on_project_status: true
+  terminate_stale_runs: true
+  fetch_all_refs: true
   fail_on_prepare_env_warning: true
+  do_not_create_commit_status: true
   events:
   - type: WEBHOOK
