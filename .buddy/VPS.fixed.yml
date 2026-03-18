@@ -2,6 +2,7 @@
   name: VPS
   refs:
   - refs/heads/main
+  - :default
   priority: HIGH
   disabled: true
   target_site_url: https://vps.divyamhospital.online
